@@ -1,5 +1,13 @@
-## Why do we need this Github repo?
-In general, every project has multiple codes, notebooks, scripts and plots, which are generated while working on the project's goals. Having a Git repo template to follow for a Python project helps i. standarize the file structure across the projects and users and ii. wrap all the relevant Python scripts into a Python package for easy distribution. Note that this distribution could be to different users or different compute environments for the same user.
+## Why do we need pyproject-template?
+In general, every project has multiple codes, notebooks, scripts and plots, which are generated while working on the project's goals. Having a Git repo template to follow for a Python project helps:
+1. standarize the file structure across the projects and users 
+   - This makes it easier to find files, scripts, and notebooks.
+   - It also helps in understanding the project structure quickly.
+   - It reduces the time it takes to set up a new project.
+2. wrap all the relevant Python scripts into a Python package for easy distribution. Note that this distribution could be to different users or different compute environments for the same user.
+    - This makes it easier to others to use and contribute to the project.
+    - It also helps in maintaining the code in the long run.
+
 
 The tutorial given here for building a Python Package is different than the typical tutorials seen on web, which uses an intermediate step of publishing it to public `pypi` server. We can't follow those tutorials for propreity code. The workflow given here avoids publishing to any public server.
 
