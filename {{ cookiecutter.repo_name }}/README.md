@@ -15,8 +15,9 @@ Here are the benefits of using pyproject-template:
    - The template includes a `.pre-commit-config.yaml` file, which uses pre-commit hooks to standardize linting and processing of Jupyter notebooks.
    - This ensures that the code follows the defined standards and helps in maintaining the code quality.
 5. *deploy the package to a private PyPi server*
-   - This allows you to host your package on a private `pypi` server, making it accessible to other organization users or compute environments without publishing it to a public server. Most of the tutorials on the web focus on publishing to a public PyPi server, which is not suitable for proprietary code.
-   - This is particularly useful for proprietary code that cannot be shared publicly.
+   - This allows you to host your package on a private `pypi` server, making it accessible to other organization users or compute environments without publishing it to a public server. 
+   - Most of the tutorials on the web focus on publishing to a public PyPi server, which is not suitable for proprietary code.
+
 
 
 ## Folder structure
