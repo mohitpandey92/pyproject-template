@@ -1,15 +1,16 @@
 ## Why do we need pyproject-template?
-In general, every project has multiple codes, notebooks, scripts and plots, which are generated while working on the project's goals. Having a Git repo template to follow for a Python project helps:
-1. standarize the file structure across the projects and users 
+In general, every project has multiple codes, notebooks, scripts and plots, which are generated while working on the project's goals. Having a Git repo template to follow for a Python project helps to:
+1. *standarize the file structure across the projects and users* 
    - This makes it easier to find files, scripts, and notebooks.
    - It also helps in understanding the project structure quickly.
    - It reduces the time it takes to set up a new project.
-2. wrap all the relevant Python scripts into a Python package for easy distribution. Note that this distribution could be to different users or different compute environments for the same user.
+2. *wrap all the relevant Python scripts into a Python package for easy distribution.* Note that this distribution could be to different users or different compute environments for the same user.
     - This makes it easier to others to use and contribute to the project.
     - It also helps in maintaining the code in the long run.
 
+Another benefit of having a template is that it helps in maintaining the code quality and consistency across the project. This is achieved by using tools like `pre-commit` hooks, which are configured to run automatically on every commit, ensuring that the code follows the defined standards.
 
-The tutorial given here for building a Python Package is different than the typical tutorials seen on web, which uses an intermediate step of publishing it to public `pypi` server. We can't follow those tutorials for propreity code. The workflow given here avoids publishing to any public server.
+The tutorial given here for building a Python Package is different than the typical tutorials seen on web, which uses an intermediate step of publishing it to public `pypi` server. We can't follow those tutorials for propriety code. The workflow given here avoids publishing to any public server.
 
 
 ## Folder structure
@@ -94,7 +95,7 @@ https://packaging.python.org/en/latest/tutorials/packaging-projects/
 
 ##  Distribute
 
-ToDo: you need setup an internal PyPi server
+ToDo: you would need to setup a private PyPi server (for example, see [private-pypiserver](https://testdriven.io/blog/private-pypi/) to host your package.
 ----------
 > **Only do this after merging the latest pull request.**
 ----------
