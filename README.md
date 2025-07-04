@@ -1,7 +1,22 @@
-## Why do we need this Github repo?
-In general, every project has multiple codes, notebooks, scripts and plots, which are generated while working on the project's goals. Having a Git repo template to follow for a Python project helps i. standarize the file structure across the projects and users and ii. wrap all the relevant Python scripts into a Python package for easy distribution. Note that this distribution could be to different users or different compute environments for the same user.
+## Why do we need pyproject-template?
+In general, every Data Science project has multiple codes, notebooks, scripts and plots, which are generated while working on the project's goals. Having a Git repo template to follow for a Data Science project is helpful to streamline your project development. 
 
-The tutorial given here for building a Python Package is different than the typical tutorials seen on web, which uses an intermediate step of publishing it to public `pypi` server. We can't follow those tutorials for propreity code. The workflow given here avoids publishing to any public server.
+Here are the benefits of using pyproject-template:
+1. *standarize the file structure across the projects and users* 
+   - This makes it easier to find files, scripts, and notebooks.
+   - It also helps in understanding the project structure quickly.
+   - It reduces the time it takes to set up a new project.
+2. *wrap all the relevant Python scripts into a Python package for easy distribution.* Note that this distribution could be to different users or different compute environments for the same user.
+    - This makes it easier to others to use and contribute to the project.
+    - It also helps in maintaining the code in the long run.
+3. *automate the setup of the project environment*
+   - The template includes a `pyproject.toml` file, which makes your Python package `pip` installable.
+4. *automate the code quality checks and linting*
+   - The template includes a `.pre-commit-config.yaml` file, which uses pre-commit hooks to standardize linting and processing of Jupyter notebooks.
+   - This ensures that the code follows the defined standards and helps in maintaining the code quality.
+5. *deploy the package to a private PyPi server*
+   - This allows you to host your package on a private `pypi` server, making it accessible to other organization users or compute environments without publishing it to a public server. Most of the tutorials on the web focus on publishing to a public PyPi server, which is not suitable for proprietary code.
+   - This is particularly useful for proprietary code that cannot be shared publicly.
 
 
 ## How to use this?
@@ -16,6 +31,7 @@ conda activate cookiecutter_env
 git clone git@github.com:mohitpandey92/pyproject-template.git
 pipx run cookiecutter pyproject-template
 ```
+
 ## Folder structure
 The folder structure should be
 ```
@@ -94,12 +110,13 @@ https://packaging.python.org/en/latest/tutorials/packaging-projects/
 
 
 ##  Distribute
-
+------------------
 ToDo: you would need to setup a private PyPi server (for example, see [private-pypiserver](https://testdriven.io/blog/private-pypi/) to host your package.
-----------
+-------------------
+
 > **Only do this after merging the latest pull request.**
-----------
-This step will push the latest build to the PyPi server
+
+This step will push the latest build to the PyPi server.
 
 You can install `twine` with `pip` if necessary:
 ``` bash
