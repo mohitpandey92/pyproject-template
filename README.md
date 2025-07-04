@@ -121,7 +121,7 @@ https://packaging.python.org/en/latest/tutorials/packaging-projects/
 
 ##  Distribute
 ------------------
-ToDo: you would need to setup a private PyPi server (for example, see [private-pypiserver](https://testdriven.io/blog/private-pypi/) to host your package.
+##### ToDo: you would need to setup a private PyPi server (for example, see [private-pypiserver](https://testdriven.io/blog/private-pypi/) to host your package.
 -------------------
 
 > **Only do this after merging the latest pull request.**
