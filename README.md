@@ -1,7 +1,7 @@
-## Why do we need pyproject-template?
+## Why do we need data-science-template?
 In general, every Data Science project has multiple codes, notebooks, scripts and plots, which are generated while working on the project's goals. Having a Git repo template to follow for a Data Science project is helpful to streamline your project development. 
 
-Here are the benefits of using pyproject-template:
+Here are the benefits of using data-science-template:
 1. *standarize the file structure across the projects and users* 
    - This makes it easier to find files, scripts, and notebooks.
    - It also helps in understanding the project structure quickly.
